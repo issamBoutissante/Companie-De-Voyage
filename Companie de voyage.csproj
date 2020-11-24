@@ -47,11 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chauffeur.cs">
+    <Compile Include="Ajouter_Chauffeur.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Chauffeur.Designer.cs">
-      <DependentUpon>Chauffeur.cs</DependentUpon>
+    <Compile Include="Ajouter_Chauffeur.Designer.cs">
+      <DependentUpon>Ajouter_Chauffeur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_Vehicule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter_Vehicule.Designer.cs">
+      <DependentUpon>Ajouter_Vehicule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_Voyage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter_Voyage.Designer.cs">
+      <DependentUpon>Ajouter_Voyage.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -60,13 +72,88 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="GererData.cs" />
+    <Compile Include="Liste_Chauffeur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Liste_Chauffeur.Designer.cs">
+      <DependentUpon>Liste_Chauffeur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Liste_Vehicule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Liste_Vehicule.Designer.cs">
+      <DependentUpon>Liste_Vehicule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Liste_Voyage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Liste_Voyage.Designer.cs">
+      <DependentUpon>Liste_Voyage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modifier_Chauffeur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modifier_Chauffeur.Designer.cs">
+      <DependentUpon>Modifier_Chauffeur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modifier_Vehicule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modifier_Vehicule.Designer.cs">
+      <DependentUpon>Modifier_Vehicule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modifier_Voyage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modifier_Voyage.Designer.cs">
+      <DependentUpon>Modifier_Voyage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Chauffeur.resx">
-      <DependentUpon>Chauffeur.cs</DependentUpon>
+    <Compile Include="Supprimer_Chauffeur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supprimer_Chauffeur.Designer.cs">
+      <DependentUpon>Supprimer_Chauffeur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suprimer_Vehicule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suprimer_Vehicule.Designer.cs">
+      <DependentUpon>Suprimer_Vehicule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suprimer_Voyage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suprimer_Voyage.Designer.cs">
+      <DependentUpon>Suprimer_Voyage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ajouter_Chauffeur.resx">
+      <DependentUpon>Ajouter_Chauffeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_Vehicule.resx">
+      <DependentUpon>Ajouter_Vehicule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_Voyage.resx">
+      <DependentUpon>Ajouter_Voyage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Liste_Chauffeur.resx">
+      <DependentUpon>Liste_Chauffeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Liste_Vehicule.resx">
+      <DependentUpon>Liste_Vehicule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Liste_Voyage.resx">
+      <DependentUpon>Liste_Voyage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modifier_Chauffeur.resx">
+      <DependentUpon>Modifier_Chauffeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modifier_Vehicule.resx">
+      <DependentUpon>Modifier_Vehicule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -77,6 +164,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Supprimer_Chauffeur.resx">
+      <DependentUpon>Supprimer_Chauffeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suprimer_Vehicule.resx">
+      <DependentUpon>Suprimer_Vehicule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suprimer_Voyage.resx">
+      <DependentUpon>Suprimer_Voyage.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

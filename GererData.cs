@@ -9,12 +9,12 @@ namespace Companie_de_voyage
 {
     class GererData
     {
-        static string conString = ConfigurationManager.ConnectionStrings["monConnection"].ConnectionString;
-        SqlConnection connection = new SqlConnection(conString);
-        SqlCommand command;
         SqlDataReader reader;
+        static string conString = ConfigurationManager.ConnectionStrings["monConnection"].ConnectionString;
         public IEnumerable<SqlDataReader> GetData(string query)
         {
+            SqlConnection connection = new SqlConnection(conString);
+            SqlCommand command;
             try
             {
                 connection.Open();
@@ -34,6 +34,7 @@ namespace Companie_de_voyage
         }
         public string Ajout(SqlCommand command)
         {
+            SqlConnection connection = new SqlConnection(conString);
             try
             {
                 using (connection = new SqlConnection(conString))
@@ -52,6 +53,8 @@ namespace Companie_de_voyage
         }
         public string Supprimer(string query)
         {
+            SqlConnection connection = new SqlConnection(conString);
+            SqlCommand command;
             try
             {
                 using (connection = new SqlConnection(conString))
@@ -71,6 +74,7 @@ namespace Companie_de_voyage
         }
         public string Modifier(SqlCommand command)
         {
+            SqlConnection connection = new SqlConnection(conString);
             if (connection.State == ConnectionState.Open) return "dija open";
             try
             {
