@@ -32,7 +32,7 @@ namespace Companie_de_voyage
         private void id_Click(object sender, EventArgs e)
         {
             id.Items.Clear();
-            foreach (var chauffeur in gererData.GetData("select * from chauffeur"))
+            foreach (var chauffeur in gererData.GetData("select id_chauffeur from chauffeur"))
             {
                 id.Items.Add(chauffeur.GetSqlString(0));
             }

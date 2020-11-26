@@ -182,6 +182,7 @@
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
             this.toolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem5.Text = "Modification";
+            this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
             // chauffeurToolStripMenuItem
             // 
@@ -197,26 +198,30 @@
             // listeToolStripMenuItem
             // 
             this.listeToolStripMenuItem.Name = "listeToolStripMenuItem";
-            this.listeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.listeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listeToolStripMenuItem.Text = "Liste";
+            this.listeToolStripMenuItem.Click += new System.EventHandler(this.listeToolStripMenuItem_Click);
             // 
             // ajoutToolStripMenuItem
             // 
             this.ajoutToolStripMenuItem.Name = "ajoutToolStripMenuItem";
-            this.ajoutToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.ajoutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ajoutToolStripMenuItem.Text = "Ajout";
+            this.ajoutToolStripMenuItem.Click += new System.EventHandler(this.ajoutToolStripMenuItem_Click);
             // 
             // suppressionToolStripMenuItem
             // 
             this.suppressionToolStripMenuItem.Name = "suppressionToolStripMenuItem";
-            this.suppressionToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.suppressionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.suppressionToolStripMenuItem.Text = "Suppression";
+            this.suppressionToolStripMenuItem.Click += new System.EventHandler(this.suppressionToolStripMenuItem_Click);
             // 
             // modificationToolStripMenuItem
             // 
             this.modificationToolStripMenuItem.Name = "modificationToolStripMenuItem";
-            this.modificationToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.modificationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modificationToolStripMenuItem.Text = "Modification";
+            this.modificationToolStripMenuItem.Click += new System.EventHandler(this.modificationToolStripMenuItem_Click);
             // 
             // stastiquesToolStripMenuItem
             // 

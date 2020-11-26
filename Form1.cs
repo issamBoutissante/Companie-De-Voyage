@@ -71,5 +71,30 @@ namespace Companie_de_voyage
         {
             OpenForm(new Suprimer_Voyage());
         }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Modifier_Voyage());
+        }
+
+        private void listeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Liste_Billet());
+        }
+
+        private void ajoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Ajouter_Billet());
+        }
+
+        private void suppressionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Suprimer_Billet());
+        }
+
+        private void modificationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Modifier_Billet());
+        }
     }
 }

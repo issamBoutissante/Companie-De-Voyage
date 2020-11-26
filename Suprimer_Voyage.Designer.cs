@@ -59,6 +59,7 @@
             this.matricule.Name = "matricule";
             this.matricule.Size = new System.Drawing.Size(201, 21);
             this.matricule.TabIndex = 70;
+            this.matricule.SelectedIndexChanged += new System.EventHandler(this.matricule_SelectedIndexChanged);
             // 
             // idChauffeur
             // 
@@ -67,6 +68,7 @@
             this.idChauffeur.Name = "idChauffeur";
             this.idChauffeur.Size = new System.Drawing.Size(201, 21);
             this.idChauffeur.TabIndex = 69;
+            this.idChauffeur.SelectedIndexChanged += new System.EventHandler(this.idChauffeur_SelectedIndexChanged);
             // 
             // duree
             // 
@@ -236,9 +238,9 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(62, 195);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(49, 13);
+            this.label11.Size = new System.Drawing.Size(15, 13);
             this.label11.TabIndex = 71;
-            this.label11.Text = "matricule";
+            this.label11.Text = "id";
             // 
             // Suprimer_Voyage
             // 

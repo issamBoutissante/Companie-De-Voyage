@@ -16,11 +16,20 @@ namespace Companie_de_voyage
         public Suprimer_Voyage()
         {
             InitializeComponent();
+            foreach (var chauffeur in gererData.GetData("select id_chauffeur from chauffeur"))
+            {
+                idChauffeur.Items.Add(chauffeur.GetSqlString(0));
+            }
+            foreach (var reader in gererData.GetData("select * from vehicule;"))
+            {
+                matricule.Items.Add(reader.GetSqlString(0));
+            }
+
         }
 
         private void id_SelectedIndexChanged(object sender, EventArgs e)
         {
-            foreach (var reader in gererData.GetData("select * from voyage where id_chauffeur='" + id.Text + "';"))
+            foreach (var reader in gererData.GetData("select * from voyage where id_voyage='" + id.Text + "';"))
             {
                 DateVoyage.Value = reader.GetDateTime(1);
                 villeDepart.Text = reader.GetString(2);
@@ -46,6 +55,16 @@ namespace Companie_de_voyage
             {
                 id.Items.Add(reader.GetInt32(0));
             }
+        }
+
+        private void idChauffeur_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void matricule_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
