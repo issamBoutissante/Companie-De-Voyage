@@ -96,5 +96,30 @@ namespace Companie_de_voyage
         {
             OpenForm(new Modifier_Billet());
         }
+
+        private void nombreDeLigneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Nombre_de_ligne());
+        }
+
+        private void billetVoyageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Buillet_Voyage());
+        }
+
+        private void voyageVehiculeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Voyage_Vehicule());
+        }
+
+        private void voyageChauffeurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Voyage_Chauffeur());
+        }
+
+        private void recetteVoyageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Recette_Voyage());
+        }
     }
 }

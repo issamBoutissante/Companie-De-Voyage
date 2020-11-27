@@ -50,6 +50,11 @@
             this.suppressionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stastiquesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nombreDeLigneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.billetVoyageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.voyageVehiculeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.voyageChauffeurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recetteVoyageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -159,28 +164,28 @@
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(142, 22);
             this.toolStripMenuItem2.Text = "Liste";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(142, 22);
             this.toolStripMenuItem3.Text = "Ajout";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(142, 22);
             this.toolStripMenuItem4.Text = "Suppression";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(142, 22);
             this.toolStripMenuItem5.Text = "Modification";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
@@ -198,36 +203,77 @@
             // listeToolStripMenuItem
             // 
             this.listeToolStripMenuItem.Name = "listeToolStripMenuItem";
-            this.listeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.listeToolStripMenuItem.Text = "Liste";
             this.listeToolStripMenuItem.Click += new System.EventHandler(this.listeToolStripMenuItem_Click);
             // 
             // ajoutToolStripMenuItem
             // 
             this.ajoutToolStripMenuItem.Name = "ajoutToolStripMenuItem";
-            this.ajoutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ajoutToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.ajoutToolStripMenuItem.Text = "Ajout";
             this.ajoutToolStripMenuItem.Click += new System.EventHandler(this.ajoutToolStripMenuItem_Click);
             // 
             // suppressionToolStripMenuItem
             // 
             this.suppressionToolStripMenuItem.Name = "suppressionToolStripMenuItem";
-            this.suppressionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.suppressionToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.suppressionToolStripMenuItem.Text = "Suppression";
             this.suppressionToolStripMenuItem.Click += new System.EventHandler(this.suppressionToolStripMenuItem_Click);
             // 
             // modificationToolStripMenuItem
             // 
             this.modificationToolStripMenuItem.Name = "modificationToolStripMenuItem";
-            this.modificationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modificationToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.modificationToolStripMenuItem.Text = "Modification";
             this.modificationToolStripMenuItem.Click += new System.EventHandler(this.modificationToolStripMenuItem_Click);
             // 
             // stastiquesToolStripMenuItem
             // 
+            this.stastiquesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nombreDeLigneToolStripMenuItem,
+            this.billetVoyageToolStripMenuItem,
+            this.voyageVehiculeToolStripMenuItem,
+            this.voyageChauffeurToolStripMenuItem,
+            this.recetteVoyageToolStripMenuItem});
             this.stastiquesToolStripMenuItem.Name = "stastiquesToolStripMenuItem";
             this.stastiquesToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.stastiquesToolStripMenuItem.Text = "Stastiques";
+            // 
+            // nombreDeLigneToolStripMenuItem
+            // 
+            this.nombreDeLigneToolStripMenuItem.Name = "nombreDeLigneToolStripMenuItem";
+            this.nombreDeLigneToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nombreDeLigneToolStripMenuItem.Text = "Nombre de ligne";
+            this.nombreDeLigneToolStripMenuItem.Click += new System.EventHandler(this.nombreDeLigneToolStripMenuItem_Click);
+            // 
+            // billetVoyageToolStripMenuItem
+            // 
+            this.billetVoyageToolStripMenuItem.Name = "billetVoyageToolStripMenuItem";
+            this.billetVoyageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.billetVoyageToolStripMenuItem.Text = "Billet/Voyage";
+            this.billetVoyageToolStripMenuItem.Click += new System.EventHandler(this.billetVoyageToolStripMenuItem_Click);
+            // 
+            // voyageVehiculeToolStripMenuItem
+            // 
+            this.voyageVehiculeToolStripMenuItem.Name = "voyageVehiculeToolStripMenuItem";
+            this.voyageVehiculeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.voyageVehiculeToolStripMenuItem.Text = "Voyage/Vehicule";
+            this.voyageVehiculeToolStripMenuItem.Click += new System.EventHandler(this.voyageVehiculeToolStripMenuItem_Click);
+            // 
+            // voyageChauffeurToolStripMenuItem
+            // 
+            this.voyageChauffeurToolStripMenuItem.Name = "voyageChauffeurToolStripMenuItem";
+            this.voyageChauffeurToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.voyageChauffeurToolStripMenuItem.Text = "Voyage/Chauffeur";
+            this.voyageChauffeurToolStripMenuItem.Click += new System.EventHandler(this.voyageChauffeurToolStripMenuItem_Click);
+            // 
+            // recetteVoyageToolStripMenuItem
+            // 
+            this.recetteVoyageToolStripMenuItem.Name = "recetteVoyageToolStripMenuItem";
+            this.recetteVoyageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.recetteVoyageToolStripMenuItem.Text = "Recette/Voyage";
+            this.recetteVoyageToolStripMenuItem.Click += new System.EventHandler(this.recetteVoyageToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -270,6 +316,11 @@
         private System.Windows.Forms.ToolStripMenuItem suppressionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modificationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stastiquesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nombreDeLigneToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem billetVoyageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem voyageVehiculeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem voyageChauffeurToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem recetteVoyageToolStripMenuItem;
     }
 }
 

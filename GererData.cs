@@ -93,5 +93,57 @@ namespace Companie_de_voyage
             }
             return "lal modification a ete effectue";
         }
+        object rows;
+        public object CountRows()
+        {
+            string nombreChauffeur="0";
+            string nombreVoyage = "0";
+            string nombreVehicule ="0";
+            string nombreBillet ="0";
+            
+            SqlConnection connection = new SqlConnection(conString);
+            try
+            {
+                SqlCommand command = new SqlCommand("select count(*) from chauffeur;", connection);
+                connection.Open();
+                nombreChauffeur= command.ExecuteScalar().ToString();
+                command.CommandText = "select count (*) from voyage";
+                nombreVoyage = command.ExecuteScalar().ToString();
+                command.CommandText = "select count (*) from vehicule";
+                nombreVehicule = command.ExecuteScalar().ToString();
+                command.CommandText = "select count (*) from billet";
+                nombreBillet = command.ExecuteScalar().ToString();
+            }
+            catch(SqlException e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return new {  nombreChauffeur,nombreVoyage,nombreVehicule,nombreBillet };
+        }
+        public string getScalar(string query)
+        {
+            SqlConnection connection = new SqlConnection(conString);
+            string resultat = "0";
+            try
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+                resultat= command.ExecuteScalar().ToString();
+                
+            }
+            catch(SqlException e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return resultat;
+        }
     }
 }
