@@ -25,7 +25,7 @@ namespace Companie_de_voyage
 
         private void imatricule_SelectedIndexChanged(object sender, EventArgs e)
         {
-           NombreDeVoyage.Text= gererData.getScalar("select count(immatricule) from voyage where immatricule='" +imatricule.Text+"';");
+           NombreDeVoyage.Text= gererData.getScalar($"select count(immatricule) from voyage where immatricule='{imatricule.Text}';");
         }
     }
 }

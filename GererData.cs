@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -85,7 +84,6 @@ namespace Companie_de_voyage
                     int numLine =command.ExecuteNonQuery();
                     if (numLine == 0) return "aucun ligne modifie";
                 }
-
             }
             catch (SqlException e)
             {
@@ -93,7 +91,6 @@ namespace Companie_de_voyage
             }
             return "lal modification a ete effectue";
         }
-        object rows;
         public object CountRows()
         {
             string nombreChauffeur="0";

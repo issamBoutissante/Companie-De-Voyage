@@ -22,8 +22,9 @@ namespace Companie_de_voyage
         {
             foreach (var chauffeur in gererData.GetData("select * from chauffeur;"))
             {
-                chauffeurdataGridView.Rows.Add(chauffeur.GetSqlString(0), chauffeur.GetSqlString(1),
-                    chauffeur.GetSqlString(2),chauffeur.GetDateTime(3));
+                chauffeurdataGridView.Rows.Add(chauffeur["id_chauffeur"], chauffeur["nom"],
+                    chauffeur["prenom"], chauffeur["adresse"], chauffeur["date_recrutement"], chauffeur["salaire"]);
+
             }
         }
     }
